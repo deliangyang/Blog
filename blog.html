@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bootstrap</title>
+	
+	<!--&lt;!&ndash; 新 Bootstrap 核心 CSS 文件 &ndash;&gt;
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+	&lt;!&ndash; 可选的Bootstrap主题文件（一般不用引入） &ndash;&gt;
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+	&lt;!&ndash; jQuery文件。务必在bootstrap.min.js 之前引入 &ndash;&gt;
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+	&lt;!&ndash; 最新的 Bootstrap 核心 JavaScript 文件 &ndash;&gt;
+	<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+    <a id="delete" href="javascript:void(0);">删除</a>
+	<!--<div class="glyphicon glyphicon-tags">adfaf</div>-->
+    <form action="tpl/test.php" method="get">
+        <input type="text" name="a" >
+        <input type="submit" value="Get" >
+    </form>
+
+    <script>
+        $.post("tpl/test.php",{
+            doo: 7
+        });
+       /* var del=document.getElementById('delete');
+        del.onclick=function(){
+            var xmlhttp=new XMLHttpRequest();
+            xmlhttp.onreadystatechange=function(){
+                if(xmlhttp.readyState==4 && xmlhttp.status==200){
+                    del.innerHTML=xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("POST", "tpl/test.php", true);
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlhttp.send("doo=6");
+        }*/
+    </script>
+
+</body>
+</html>
